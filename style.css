@@ -26,7 +26,7 @@ html {
 .wrapper {
     margin: 1em 1em;
 }
-
+/*Top Menu Starts. */
 .top-menu {
     height: 400px;
     width: auto;
@@ -37,69 +37,12 @@ html {
     text-align: center;
 }
 
-.main-title{
+.main-title {
     margin: 1em 1em;
     text-align: center;
     display: inline-block;
 }
-
-
-/*Drop Down Menu Starts*/
-/*Style btn.*/
-.btn-drop {
-    background-color: #0CBDCC;
-    color: black;
-    font-size: 17px;
-    padding: 1em;
-    border: solid;
-    cursor: pointer;
-    transition: background-color .3s;
-    width: 168px;
-}
-
-/*Cointainer of the drop Down menu, set the location of it.*/
-.dropDown {
-    position: absolute;
-    top: 1em;
-    right: 2.5em;
-}
-
-/*Content of DropDown menu.*/
-/* Z-index specifies the order of an element, from the highest to the lowest element, only works with positioned
-elements: absolute,relative or fixed.*/
-.drop-menu {
-    display: none;
-    position: absolute;
-    background: var(--light);
-    color: black;
-    min-width: 168px;
-    box-shadow: var(--shadow);
-    z-index: 1;
-}
-
-/*Change the A's that are stored inside the class .drop-menu*/
-.drop-menu a {
-    color: black;
-    padding: 1em;
-    text-decoration: none;
-    display: block;
-}
-
-.btn-drop:hover {
-    background-color: #4F9399;
-}
-
-/*Hover Properties for the A elements*/
-.drop-menu a:hover {
-    background-color: #FF6875;
-}
-
-/*This will activate the content-menu when we hover the menu.*/
-.dropDown:hover .drop-menu{
-    display: block;
-}
-
-/*Drop Down Menu Ends*/
+/*Top Menu Ends.*/
 
 /*Container Starts, Grid.*/
 /*Set title Box next to the About us box and Glosario.*/
@@ -107,47 +50,30 @@ elements: absolute,relative or fixed.*/
     display: grid;
     grid-gap: 1em;
     grid-template-areas: 
-    'container info-box'
-    'container glosario-box'
+    'containerBox infoBox'
+    'containerBox glosarioBox'
 }
 
 .showcase h2 {
     font-size: 2rem;
-    margin-bottom: 0;
     color: #333;
     margin: 5px;
 }
 
 .showcase h3 {
     font-size: 1rem;
-    margin-bottom: 0;
     color: #333;
     margin: 5px;
 }
 
 .showcase p {
     font-size: 16px;
-    margin-bottom: 10px;
     color: black;
-    margin: 10px;
-}
-
-.container {
-    grid-area: container;
-    display: flex;
-    height: auto;
-    width: auto;
-    border: solid;
-    box-shadow: var(--shadow);
-    margin: 1em 1em;
+    margin: 0px 10px;
 }
 
 .containerBox {
-    size: auto;
-}
-
-.info-box {
-    grid-area: info-box;
+    grid-area: containerBox;
     display: grid;
     height: auto;
     width: auto;
@@ -156,18 +82,37 @@ elements: absolute,relative or fixed.*/
     margin: 1em 1em;
 }
 
-.glosario-box {
-    grid-area: glosario-box;
+.infoBox {
+    grid-area: infoBox;
     display: grid;
     height: auto;
     width: auto;
     border: solid;
     box-shadow: var(--shadow);
     margin: 1em 1em;
+}
+
+.glosarioBox {
+    grid-area: glosarioBox;
+    display: grid;
+    height: auto;
+    width: auto;
+    border: solid;
+    box-shadow: var(--shadow);
+    margin: 1em 1em;
+    position: relative;
+}
+
+.ablog {
+    position: absolute;
+    top: 45px;
+    right: 5px;
 }
 
 /*Container Box Ends*/
-/*Content Box Begins*/
+
+
+/*Content Boxes Begin*/
 .content-box1 {
     border: solid;
     box-shadow: var(--shadow);
@@ -194,10 +139,6 @@ elements: absolute,relative or fixed.*/
     'mini-box-a mini-box-b mini-box-c mini-box-d'
 }
 
-/*Drop Down Menu Starts*/
-/*Style btn.*/
-/*Drop Down Menu Ends*/
-
 .content-box3 {
     border: solid;
     box-shadow: var(--shadow);
@@ -222,7 +163,10 @@ elements: absolute,relative or fixed.*/
     grid-template-areas:
     'mini-box-a mini-box-b mini-box-c mini-box-d'
 }
+/*Content Boxes End*/
 
+
+/*Mini Content Boxes Begin*/
 
 .mini-box-a {
     grid-area: mini-box-a;
@@ -263,61 +207,86 @@ elements: absolute,relative or fixed.*/
     box-shadow: var(--shadow);
     margin: 1em 1em;
 }
+/*Mini Content Boxes End*/
 
-
+/*Mini Content Boxes Info Begin*/
 .content-box1 h2 {
     font-size: 16px;
-    margin-bottom: 0;
     color: #333;
-    margin: 5px;
+    margin: 0px 5px;
+    margin-top: 10px;
+}
+
+.content-box1 h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 10px;
 }
 
 .content-box1 p {
     font-size: 15px;
-    margin-bottom: 10px;
     color: black;
     margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 .content-box2 h2 {
     font-size: 16px;
-    margin-bottom: 0;
     color: #333;
-    margin: 5px;
+    margin: 0px 5px;
+    margin-top: 10px;    
+}
+
+.content-box2 h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 10px;
 }
 
 .content-box2 p {
     font-size: 15px;
-    margin-bottom: 10px;
     color: black;
     margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
+
 .content-box3 h2 {
     font-size: 16px;
-    margin-bottom: 0;
     color: #333;
-    margin: 5px;
+    margin: 0px 5px;
+    margin-top: 10px;    
 }
 
 .content-box3 p {
     font-size: 15px;
-    margin-bottom: 10px;
     color: black;
     margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
+
 .content-box4 h2 {
     font-size: 16px;
-    margin-bottom: 0;
     color: #333;
-    margin: 5px;
+    margin: 0px 5px;
+    margin-top: 10px;    
+}
+
+.content-box4 h3 {
+    font-size: 14px;
+    color: #333;
+    margin: 10px;
 }
 
 .content-box4 p {
     font-size: 15px;
-    margin-bottom: 10px;
     color: black;
     margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
-
+/*Mini Content Boxes Info Begin*/
 /*Content Box Ends*/
 
 
@@ -341,6 +310,8 @@ elements: absolute,relative or fixed.*/
     border: solid;
     box-shadow: var(--shadow);
     margin: 1em 1em;
+    background: url(img/cetavbanner.png) no-repeat center #FF9801;
+    background-size: auto;
 }
 
 .info-box-b {
@@ -354,31 +325,31 @@ elements: absolute,relative or fixed.*/
 }
 
 .info-box-a h3{
-    font-size: 18px;
-    margin-bottom: 0;
+    font-size: 14px;
     color: #333;
-    margin: 5px;
+    margin: 10px;
 }
 
 .info-box-b h3{
-    font-size: 18px;
-    margin-bottom: 0;
+    font-size: 14px;
     color: #333;
-    margin: 5px;
+    margin: 10px;
 }
 
 .info-box-a p{
-    font-size: 16px;
-    margin-bottom: 0;
-    color: #333;
-    margin: 5px;
+    font-size: 15px;
+    color: black;
+    margin: 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .info-box-b p{
-    font-size: 16px;
-    margin-bottom: 0;
-    color: #333;
-    margin: 5px;
+    font-size: 15px;
+    color: black;
+    margin: 5px 10px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 
