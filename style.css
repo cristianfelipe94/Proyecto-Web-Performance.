@@ -18,22 +18,19 @@ a {
 }
 
 html {
-    margin: 0;
+    margin: 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
     background: #CDC3C2;    
 }
 
-.wrapper {
-    margin: 1em 1em;
-}
 /*Top Menu Starts. */
 .top-menu {
-    height: 400px;
-    width: auto;
+    height: 200px;
+    width: 100%;
     border: solid;
     background-color: #fff;
     box-shadow: var(--shadow);
-    margin: 0px 1em;
+    margin: 5px 0px;
     text-align: center;
 }
 
@@ -48,7 +45,7 @@ html {
 /*Set title Box next to the About us box and Glosario.*/
 .showcase {
     display: grid;
-    grid-gap: 1em;
+    grid-gap: 1em 0em;
     grid-template-areas: 
     'containerBox infoBox'
     'containerBox glosarioBox'
@@ -79,7 +76,7 @@ html {
     width: auto;
     border: solid;
     box-shadow: var(--shadow);
-    margin: 1em 1em;
+    margin: 1em 0em;
 }
 
 .infoBox {
@@ -89,7 +86,8 @@ html {
     width: auto;
     border: solid;
     box-shadow: var(--shadow);
-    margin: 1em 1em;
+    margin: 1em 0em;
+    margin-left: 1em;
 }
 
 .glosarioBox {
@@ -99,7 +97,8 @@ html {
     width: auto;
     border: solid;
     box-shadow: var(--shadow);
-    margin: 1em 1em;
+    margin: 1em 0em;
+    margin-left: 1em;    
     position: relative;
 }
 
@@ -117,7 +116,7 @@ html {
     border: solid;
     box-shadow: var(--shadow);
     background-color: #ddd;
-    margin: 1em 1em;
+    margin: 1em 0em;
     height: auto;
     width: auto;
     display: grid;
@@ -130,7 +129,7 @@ html {
     border: solid;
     box-shadow: var(--shadow);
     background-color: #ddd;    
-    margin: 1em 1em;
+    margin: 1em 0em;
     height: auto;
     width: auto;
     display: grid;
@@ -143,7 +142,7 @@ html {
     border: solid;
     box-shadow: var(--shadow);
     background-color: #ddd;    
-    margin: 1em 1em;
+    margin: 1em 0em;
     height: auto;
     width: auto;
     display: grid;
@@ -155,7 +154,7 @@ html {
     border: solid;
     box-shadow: var(--shadow);
     background-color: #ddd;    
-    margin: 1em 1em;
+    margin: 1em 0em;
     height: auto;
     width: auto;
     display: grid;
@@ -296,7 +295,7 @@ html {
 .footer-wrapper {
     display: grid;
     border: solid;
-    margin: 0px 30px;
+    margin: 0px 0px;
     grid-gap: 1em;
     grid-template-areas:
     'info-box-a info-box-b'
@@ -309,7 +308,8 @@ html {
     width: auto;
     border: solid;
     box-shadow: var(--shadow);
-    margin: 1em 1em;
+    margin: 1em 0em;
+    margin-left: 1em;
     background: url(img/cetavbanner.png) no-repeat center #FF9801;
     background-size: auto;
 }
@@ -321,7 +321,8 @@ html {
     width: auto;
     border: solid;
     box-shadow: var(--shadow);
-    margin: 1em 1em;
+    margin: 1em 0em;
+    margin-right: 1em;
 }
 
 .info-box-a h3{
@@ -362,5 +363,5 @@ footer{
 	color: var(--light);
 	text-align: center;
     padding: 0.5rem;
-    margin: 5px 30px;
+    margin: 5px 0px;
 }
