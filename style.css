@@ -20,24 +20,31 @@ a {
 html {
     margin: 0px 0px;
     font-family: Arial, Helvetica, sans-serif;
-    background: #CDC3C2;    
+    background: rgb(135, 210, 250); 
 }
 
 /*Top Menu Starts. */
 .top-menu {
     height: 200px;
     width: 100%;
-    border: solid;
+    border: none;
     background-color: #fff;
     box-shadow: var(--shadow);
     margin: 5px 0px;
     text-align: center;
+    background-image: url("img/img2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
 }
 
 .main-title {
     margin: 1em 1em;
     text-align: center;
     display: inline-block;
+    color: white;
+    font-size: 100px;
+    
 }
 /*Top Menu Ends.*/
 
@@ -70,32 +77,38 @@ html {
 }
 
 .containerBox {
+    background-color:#ddd;
     grid-area: containerBox;
     display: grid;
     height: auto;
     width: auto;
-    border: solid;
+    border: none;
     box-shadow: var(--shadow);
     margin: 1em 0em;
 }
+.containerBox p {
+    color: black;
+}
 
 .infoBox {
+    background-color:#ddd;
     grid-area: infoBox;
     display: grid;
     height: auto;
     width: auto;
-    border: solid;
+    border: none;
     box-shadow: var(--shadow);
     margin: 1em 0em;
     margin-left: 1em;
 }
 
 .glosarioBox {
+    background-color:#ddd;
     grid-area: glosarioBox;
     display: grid;
     height: auto;
     width: auto;
-    border: solid;
+    border: none;
     box-shadow: var(--shadow);
     margin: 1em 0em;
     margin-left: 1em;    
@@ -103,6 +116,8 @@ html {
 }
 
 .ablog {
+    background-color:#ddd;
+    border: none;
     position: absolute;
     top: 45px;
     right: 5px;
@@ -113,9 +128,8 @@ html {
 
 /*Content Boxes Begin*/
 .content-box1 {
-    border: solid;
-    box-shadow: var(--shadow);
-    background-color: #ddd;
+    border: none;
+    background: rgb(135, 210, 250); 
     margin: 1em 0em;
     height: auto;
     width: auto;
@@ -126,9 +140,7 @@ html {
 }
 
 .content-box2 {
-    border: solid;
-    box-shadow: var(--shadow);
-    background-color: #ddd;    
+    background: rgb(135, 210, 250);    
     margin: 1em 0em;
     height: auto;
     width: auto;
@@ -139,9 +151,7 @@ html {
 }
 
 .content-box3 {
-    border: solid;
-    box-shadow: var(--shadow);
-    background-color: #ddd;    
+    background: rgb(135, 210, 250);     
     margin: 1em 0em;
     height: auto;
     width: auto;
@@ -151,9 +161,7 @@ html {
     'mini-box-a mini-box-b mini-box-c mini-box-d'
 }
 .content-box4 {
-    border: solid;
-    box-shadow: var(--shadow);
-    background-color: #ddd;    
+    background: rgb(135, 210, 250);  
     margin: 1em 0em;
     height: auto;
     width: auto;
@@ -168,41 +176,45 @@ html {
 /*Mini Content Boxes Begin*/
 
 .mini-box-a {
+    background-color:#ddd;
     grid-area: mini-box-a;
     display: grid;
     height: auto;
     width: auto;
-    border: solid;
+    border: none;
     box-shadow: var(--shadow);
     margin: 1em 1em;
 }
 
 .mini-box-b {
+    background-color:#ddd;
     grid-area: mini-box-b;
     display: grid;
     height: auto;
     width: auto;
-    border: solid;
+    border: none;
     box-shadow: var(--shadow);
     margin: 1em 1em;
 }
 
 .mini-box-c {
+    background-color:#ddd;
     grid-area: mini-box-c;
     display: grid;
     height: auto;
     width: auto;
-    border: solid;
+    border: none;
     box-shadow: var(--shadow);
     margin: 1em 1em;
 }
 
 .mini-box-d {
+    background-color:#ddd;
     grid-area: mini-box-d;
     display: grid;
     height: auto;
     width: auto;
-    border: solid;
+    border: none;
     box-shadow: var(--shadow);
     margin: 1em 1em;
 }
@@ -294,7 +306,6 @@ html {
 
 .footer-wrapper {
     display: grid;
-    border: solid;
     margin: 0px 0px;
     grid-gap: 1em;
     grid-template-areas:
@@ -306,7 +317,6 @@ html {
     display: grid;
     height: auto;
     width: auto;
-    border: solid;
     box-shadow: var(--shadow);
     margin: 1em 0em;
     margin-left: 1em;
@@ -316,10 +326,10 @@ html {
 
 .info-box-b {
     grid-area: info-box-b;
+    border: solid;
     display: grid;
     height: auto;
     width: auto;
-    border: solid;
     box-shadow: var(--shadow);
     margin: 1em 0em;
     margin-right: 1em;
